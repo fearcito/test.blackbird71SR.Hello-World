@@ -1,0 +1,9 @@
+tests:
+        assertStdout: "Hello World"
+        input:
+                - ""
+software:
+        python:
+                execute: ["python", "-c", "HelloWorld.py"]
+        bash:
+                execute: ["bash", "HelloWorld.sh"]
