@@ -4,6 +4,9 @@ tests:
                 - ""
 software:
         python:
-                execute: ["python", "-c", "HelloWorld.py"]
+                execute: ["python", "HelloWorld.py"]
         bash:
                 execute: ["bash", "HelloWorld.sh"]
+        install:
+                - git clone https://github.com/satorici/Hello-World
+                - cd Hello-World
