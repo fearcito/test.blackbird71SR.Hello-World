@@ -3,8 +3,6 @@ tests:
                 assertStdoutEqual: "Hello World"
                 input:
                         - 2
-                test:
-                        - [[hello]]
 software:
         python:
                 execute: ["python3", "HelloWorld.py", "[[tests]]"]
