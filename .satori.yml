@@ -14,3 +14,5 @@ software:
                 execute: ["perl", "install/Hello-World/HelloWorld.pl", "[[tests]]"]
         php:
                 execute: ["php", "install/Hello-World/HelloWorld.php", "[[tests]]"]
+                install:
+                        - apt install php
