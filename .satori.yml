@@ -11,4 +11,4 @@ software:
         bash:
                 execute: ["bash", "install/Hello-World/HelloWorld.sh", "[[tests]]"]
         perl:
-                execute: ["perl", "install/Hello-World/HelloWorld.rb", "[[tests]]"]
+                execute: ["perl", "install/Hello-World/HelloWorld.pl", "[[tests]]"]
