@@ -1,6 +1,6 @@
 tests:
         hello:
-                assertStdoutEqual: "Hello World"
+                assertStdoutEqual: "Hello Wor2ld"
                 input:
                         - ""
 software:
