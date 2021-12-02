@@ -1,7 +1,8 @@
 tests:
-        assertStdout: "Hello World"
-        input:
-                - ""
+        hello:
+                assertStdout: "Hello World"
+                input:
+                        - ""
 software:
         python:
                 execute: ["python3", "HelloWorld.py"]
