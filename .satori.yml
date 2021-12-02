@@ -4,7 +4,7 @@ tests:
                 - ""
 software:
         python:
-                execute: ["python", "HelloWorld.py"]
+                execute: ["python3", "HelloWorld.py"]
         bash:
                 execute: ["bash", "HelloWorld.sh"]
         install:
