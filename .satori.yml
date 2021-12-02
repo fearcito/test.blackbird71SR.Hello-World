@@ -10,5 +10,5 @@ software:
                         - git clone https://github.com/satorici/Hello-World
         bash:
                 execute: ["bash", "install/Hello-World/HelloWorld.sh", "[[tests]]"]
-        ruby:
-                execute: ["ruby", "install/Hello-World/HelloWorld.rb", "[[tests]]"]
+        perl:
+                execute: ["perl", "install/Hello-World/HelloWorld.rb", "[[tests]]"]
