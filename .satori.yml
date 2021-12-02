@@ -2,7 +2,7 @@ tests:
         hello:
                 assertStdoutEqual: "Hello World"
                 input:
-                        - 2
+                        - ""
 software:
         python:
                 execute: ["python3", "install/Hello-World/HelloWorld.py", "[[tests]]"]
