@@ -2,14 +2,14 @@ tests:
         hello:
                 assertStdoutEqual: "Hello World"
                 input:
-                        - 2
+                        - ""
                 test:
                         - [[hello]]
 software:
         python:
-                execute: ["python3", "HelloWorld.py"]
+                execute: ["python3", "HelloWorld.py[[tests]]"]
         bash:
-                execute: ["bash", "HelloWorld.sh"]
+                execute: ["bash", "HelloWorld.sh[[tests]]"]
         install:
                 - git clone https://github.com/satorici/Hello-World
                 - cd Hello-World
