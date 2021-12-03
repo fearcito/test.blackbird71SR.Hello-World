@@ -1,1 +1,22 @@
-	-
+tests:
+    hello:
+        assertStdoutEqual: "Hello World"
+        input:
+            - ""
+software:
+    python:
+        execute: ["python3", "install/Hello-World/HelloWorld.py", "[[tests]]"]
+        install: 
+            - git clone https://github.com/satorici/Hello-World
+    bash:
+        execute: ["bash", "install/Hello-World/HelloWorld.sh", "[[tests]]"]
+    perl:
+        execute: ["perl", "install/Hello-World/HelloWorld.pl", "[[tests]]"]
+    php:
+        execute: ["php", "install/Hello-World/HelloWorld.php", "[[tests]]"]
+    ruby:
+        execute: ["ruby", "install/Hello-World/HelloWorld.rb", "[[tests]]"]
+    javascript:
+        execute: ["node", "install/Hello-World/HelloWorld.js", "[[tests]]"]
+    go:
+        execute: ["go", "run", "install/Hello-World/HelloWorld.go", "[[tests]]"]
