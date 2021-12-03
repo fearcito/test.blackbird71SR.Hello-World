@@ -1,20 +1,20 @@
 tests:
-        hello:
-                assertStdoutEqual: "Hello World"
-                input:
-                        - ""
+    hello:
+        assertStdoutEqual: "Hello World"
+        input:
+            - ""
 software:
-        python:
-                execute: ["python3", "install/Hello-World/HelloWorld.py", "[[tests]]"]
-                install: 
-                        - git clone https://github.com/satorici/Hello-World
-        bash:
-                execute: ["bash", "install/Hello-World/HelloWorld.sh", "[[tests]]"]
-        perl:
-                execute: ["perl", "install/Hello-World/HelloWorld.pl", "[[tests]]"]
-        php:
-                execute: ["php", "install/Hello-World/HelloWorld.php", "[[tests]]"]
-                install:
-			- apt search php
-                        - apt install -y php
+    python:
+        execute: ["python3", "install/Hello-World/HelloWorld.py", "[[tests]]"]
+        install: 
+            - git clone https://github.com/satorici/Hello-World
+    bash:
+        execute: ["bash", "install/Hello-World/HelloWorld.sh", "[[tests]]"]
+    perl:
+        execute: ["perl", "install/Hello-World/HelloWorld.pl", "[[tests]]"]
+    php:
+        execute: ["php", "install/Hello-World/HelloWorld.php", "[[tests]]"]
+        install:
+            - apt search php
+            - apt install -y php
 			- php
