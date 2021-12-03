@@ -19,4 +19,4 @@ software:
     javascript:
         execute: ["node", "install/Hello-World/HelloWorld.js", "[[tests]]"]
     go:
-        execute: ["go", "install/Hello-World/HelloWorld.go", "[[tests]]"]
+        execute: ["go", "run", "install/Hello-World/HelloWorld.go", "[[tests]]"]
