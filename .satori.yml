@@ -15,4 +15,4 @@ software:
         php:
                 execute: ["php", "install/Hello-World/HelloWorld.php", "[[tests]]"]
                 install:
-                        - apt install php
+                        - apt install -y php
