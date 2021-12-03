@@ -17,4 +17,4 @@ software:
         install:
             - apt search php
             - apt install -y php
-			- php
+            - php
