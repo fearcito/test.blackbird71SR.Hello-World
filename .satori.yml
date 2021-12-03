@@ -15,4 +15,5 @@ software:
     php:
         execute: ["php", "install/Hello-World/HelloWorld.php", "[[tests]]"]
         install:
-            - apt install -y php7.4
+            - apt search php
+            - apt install -y php
