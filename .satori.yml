@@ -1,6 +1,6 @@
 tests:
     hello:
-        assertStdoutEqual: "Hello World2"
+        assertStdoutEqual: "Hello World"
         input:
             - ""
 software:
@@ -20,3 +20,4 @@ software:
         execute: ["node", "install/Hello-World/HelloWorld.js", "[[tests]]"]
     go:
         execute: ["go", "run", "install/Hello-World/HelloWorld.go", "[[tests]]"]
+	-
