@@ -16,3 +16,7 @@ software:
         execute: ["php", "install/Hello-World/HelloWorld.php", "[[tests]]"]
     ruby:
         execute: ["ruby", "install/Hello-World/HelloWorld.rb", "[[tests]]"]
+    javascript:
+        execute: ["node", "install/Hello-World/HelloWorld.js", "[[tests]]"]
+    go:
+        execute: ["go", "install/Hello-World/HelloWorld.go", "[[tests]]"]
