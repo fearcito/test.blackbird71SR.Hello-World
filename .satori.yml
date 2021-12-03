@@ -20,4 +20,3 @@ software:
         execute: ["node", "install/Hello-World/HelloWorld.js", "[[tests]]"]
     go:
         execute: ["go", "run", "install/Hello-World/HelloWorld.go", "[[tests]]"]
-	-
