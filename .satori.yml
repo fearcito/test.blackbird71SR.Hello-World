@@ -5,18 +5,16 @@ tests:
             - ""
 software:
     python:
-        execute: ["python3", "install/Hello-World/HelloWorld.py", "[[tests]]"]
-        install: 
-            - git clone https://github.com/satorici/Hello-World
+        execute: ["python3", "HelloWorld.py", "[[tests]]"]
     bash:
-        execute: ["bash", "install/Hello-World/HelloWorld.sh", "[[tests]]"]
+        execute: ["bash", "HelloWorld.sh", "[[tests]]"]
     perl:
-        execute: ["perl", "install/Hello-World/HelloWorld.pl", "[[tests]]"]
+        execute: ["perl", "HelloWorld.pl", "[[tests]]"]
     php:
-        execute: ["php", "install/Hello-World/HelloWorld.php", "[[tests]]"]
+        execute: ["php", "HelloWorld.php", "[[tests]]"]
     ruby:
-        execute: ["ruby", "install/Hello-World/HelloWorld.rb", "[[tests]]"]
+        execute: ["ruby", "HelloWorld.rb", "[[tests]]"]
     javascript:
-        execute: ["node", "install/Hello-World/HelloWorld.js", "[[tests]]"]
+        execute: ["node", "HelloWorld.js", "[[tests]]"]
     go:
-        execute: ["go", "run", "install/Hello-World/HelloWorld.go", "[[tests]]"]
+        execute: ["go", "run", "HelloWorld.go", "[[tests]]"]
