@@ -20,4 +20,3 @@ software:
         execute: ["go", "run", "HelloWorld.go", "[[tests]]"]
     html:
         execute: ["lynx", "--dump", "HelloWorld.html#[[tests]]"]
-	-
