@@ -10,8 +10,8 @@ software:
         execute: ["bash", "HelloWorld.sh", "[[tests]]"]
     perl:
         execute: ["perl", "HelloWorld.pl", "[[tests]]"]
-    php:
-        execute: ["php", "HelloWorld.php", "[[tests]]"]
+    #php:
+    #    execute: ["php", "HelloWorld.php", "[[tests]]"]
     ruby:
         execute: ["ruby", "HelloWorld.rb", "[[tests]]"]
     javascript:
