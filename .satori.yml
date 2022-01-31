@@ -12,11 +12,11 @@ software:
         execute: ["perl", "HelloWorld.pl", "[[tests]]"]
     #php:
     #    execute: ["php", "HelloWorld.php", "[[tests]]"]
-    ruby:
-        execute: ["ruby", "HelloWorld.rb", "[[tests]]"]
-    javascript:
-        execute: ["node", "HelloWorld.js", "[[tests]]"]
-    go:
-        execute: ["go", "run", "HelloWorld.go", "[[tests]]"]
-    html:
-        execute: ["lynx", "--dump", "HelloWorld.html#[[tests]]"]
+    #ruby:
+    #    execute: ["ruby", "HelloWorld.rb", "[[tests]]"]
+    #javascript:
+    #    execute: ["node", "HelloWorld.js", "[[tests]]"]
+    #go:
+    #    execute: ["go", "run", "HelloWorld.go", "[[tests]]"]
+    #html:
+    #    execute: ["lynx", "--dump", "HelloWorld.html#[[tests]]"]
