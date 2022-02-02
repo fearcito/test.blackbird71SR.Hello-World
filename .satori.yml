@@ -1,6 +1,7 @@
 tests:
     hello:
         assertStdoutEqual: "Hello World"
+        assertStdoutNotContains: "Blah"
         input:
             - ""
 software:
@@ -10,6 +11,8 @@ software:
         execute: ["bash", "HelloWorld.sh", "[[tests]]"]
     perl:
         execute: ["perl", "HelloWorld.pl", "[[tests]]"]
+    tuproprioscript:
+        execute: ["python3", "cualquierotracosa.py", "[[tests]]"]
     #php:
     #    execute: ["php", "HelloWorld.php", "[[tests]]"]
     #ruby:
