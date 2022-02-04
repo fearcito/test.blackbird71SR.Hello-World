@@ -1,7 +1,7 @@
 tests:
     hello:
         assertStdoutEqual: "Hello World"
-        assertStdoutNotContains: "Blah"
+        assertStdoutNotContains: "Hello World"
         input:
             - ""
 software:
