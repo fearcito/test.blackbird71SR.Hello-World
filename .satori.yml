@@ -1,7 +1,11 @@
 tests:
     random-name:
         assertStdoutEqual: "Hello World" # Should fail
-        # assertStdoutNotContains: "Hello World"
+        assertStdoutNotContains: "Hello"
+        assertStdoutContains: "Ciao"
+        assertStdoutNotEqual: "Hello Earth"
+        assertReturnCode: 1
+        assertKilled: "requested"
         input:
             - "Hello Earth"
 software:
