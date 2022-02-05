@@ -1,25 +1,25 @@
 tests:
-    hello:
-        assertStdoutEqual: "Hello World"
-        assertStdoutNotContains: "Hello World"
+    random-name:
+        assertStdoutEqual: "Hello World" # Should fail
+        # assertStdoutNotContains: "Hello World"
         input:
-            - ""
+            - "Hello Earth"
 software:
     python:
-        execute: ["python3", "HelloWorld.py", "[[tests]]"]
-    bash:
-        execute: ["bash", "HelloWorld.sh", "[[tests]]"]
-    perl:
-        execute: ["perl", "HelloWorld.pl", "[[tests]]"]
-    tuproprioscript:
-        execute: ["python3", "cualquierotracosa.py", "[[tests]]"]
-    #php:
-    #    execute: ["php", "HelloWorld.php", "[[tests]]"]
-    #ruby:
-    #    execute: ["ruby", "HelloWorld.rb", "[[tests]]"]
-    #javascript:
-    #    execute: ["node", "HelloWorld.js", "[[tests]]"]
-    #go:
-    #    execute: ["go", "run", "HelloWorld.go", "[[tests]]"]
-    #html:
+        execute: ["python3", "a_test.py", "[[tests]]"]
+    # bash:
+    #     execute: ["bash", "HelloWorld.sh", "[[tests]]"]
+    # perl:
+    #     execute: ["perl", "HelloWorld.pl", "[[tests]]"]
+    # tuproprioscript:
+    #     execute: ["python3", "cualquierotracosa.py", "[[tests]]"]
+    # php:
+    #     execute: ["php", "HelloWorld.php", "[[tests]]"]
+    # ruby:
+    #     execute: ["ruby", "HelloWorld.rb", "[[tests]]"]
+    # javascript:
+    #     execute: ["node", "HelloWorld.js", "[[tests]]"]
+    # go:
+    #     execute: ["go", "run", "HelloWorld.go", "[[tests]]"]
+    # html:
     #    execute: ["lynx", "--dump", "HelloWorld.html#[[tests]]"]
