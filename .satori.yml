@@ -4,8 +4,15 @@ tests:
         assertStdoutNotContains: "Hello"
         assertStdoutContains: "Ciao"
         assertStdoutNotEqual: "Hello Earth"
+        
+        assertStderrEqual: "Hello World"
+        assertStderrNotContains: "Hello"
+        assertStderrContains: "Ciao"
+        assertStderrNotEqual: "Hello Earth"
+
         assertReturnCode: 1
         assertKilled: "requested"
+
         input:
             - "Hello Earth"
 software:
