@@ -1,5 +1,5 @@
 tests:
-    random-name:
+    failed-tests:
         assertStdoutEqual: "Hello World" # Should fail
         assertStdoutNotContains: "Hello"
         assertStdoutContains: "Ciao"
@@ -15,6 +15,23 @@ tests:
 
         input:
             - "Hello Earth"
+    
+    passed-tests:
+        assertStdoutEqual: "Hello World" # Should pass
+        assertStdoutNotContains: "Other stuff"
+        assertStdoutContains: "Hello"
+        assertStdoutNotEqual: "Hello Earth"
+        
+        assertStderrEqual: "Hello World"
+        assertStderrNotContains: "Other stuff"
+        assertStderrContains: "Hello"
+        assertStderrNotEqual: "Hello Earth"
+
+        assertReturnCode: 0
+        assertKilled: "not killed"
+
+        input:
+            - "Hello World"
 software:
     python:
         execute: ["python3", "a_test.py", "[[tests]]"]
