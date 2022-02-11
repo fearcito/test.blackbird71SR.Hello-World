@@ -1,4 +1,5 @@
 tests:
+    assertSoftwareExists: '0'
     failed-tests:
         assertStdoutEqual: "Hello World" # Should fail
         assertStdoutNotContains: "Hello"
