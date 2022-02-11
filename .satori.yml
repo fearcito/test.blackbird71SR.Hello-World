@@ -43,8 +43,8 @@ software:
     #     execute: ["python3", "cualquierotracosa.py", "[[tests]]"]
     # php:
     #     execute: ["php", "HelloWorld.php", "[[tests]]"]
-    # ruby:
-    #     execute: ["ruby", "HelloWorld.rb", "[[tests]]"]
+    ruby:
+        execute: ["ruby", "HelloWorld.rb", "[[tests]]"]
     # javascript:
     #     execute: ["node", "HelloWorld.js", "[[tests]]"]
     # go:
