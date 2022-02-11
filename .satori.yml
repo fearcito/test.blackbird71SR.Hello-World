@@ -35,8 +35,8 @@ tests:
 software:
     python:
         execute: ["python3", "a_test.py", "[[tests]]"]
-    # bash:
-    #     execute: ["bash", "HelloWorld.sh", "[[tests]]"]
+    bash:
+        execute: ["bash", "HelloWorld.sh", "[[tests]]"]
     # perl:
     #     execute: ["perl", "HelloWorld.pl", "[[tests]]"]
     # tuproprioscript:
