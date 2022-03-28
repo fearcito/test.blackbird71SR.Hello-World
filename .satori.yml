@@ -1,54 +1,11 @@
 tests:
-    failed-tests:
-        assertSoftwareExists: '0'
-        assertStdoutEqual: "Hello World" # Should fail
-        assertStdoutNotContains: "Hello"
-        assertStdoutContains: "Ciao"
-        assertStdoutNotEqual: "Hello Earth"
-        
-        assertStderrEqual: "Hello World"
-        assertStderrNotContains: "Hello"
-        assertStderrContains: "Ciao"
-        assertStderrNotEqual: "Hello Earth"
+	assertStdoutEqual: Hello World
+	
+	greet:
+		- Hello World
 
-        assertReturnCode: 1
-        assertKilled: "requested"
+	python:
+		- [python3, HelloWorld.py]
 
-        input:
-            - "Hello Earth"
-    
-    passed-tests:
-        assertStdoutEqual: "Hello World" # Should pass
-        assertStdoutNotContains: "Other stuff"
-        assertStdoutContains: "Hello"
-        assertStdoutNotEqual: "Hello Earth"
-        
-        assertStderrEqual: "Hello World"
-        assertStderrNotContains: "Other stuff"
-        assertStderrContains: "Hello"
-        assertStderrNotEqual: "Hello Earth"
-
-        assertReturnCode: 0
-        assertKilled: "not killed"
-
-        input:
-            - "Hello World"
-software:
-    python:
-        execute: ["python3", "a_test.py", "[[tests]]"]
-    bash:
-        execute: ["bash", "HelloWorld.sh", "[[tests]]"]
-    # perl:
-    #     execute: ["perl", "HelloWorld.pl", "[[tests]]"]
-    # tuproprioscript:
-    #     execute: ["python3", "cualquierotracosa.py", "[[tests]]"]
-    # php:
-    #     execute: ["php", "HelloWorld.php", "[[tests]]"]
-    ruby:
-        execute: ["ruby", "HelloWorld.rb", "[[tests]]"]
-    # javascript:
-    #     execute: ["node", "HelloWorld.js", "[[tests]]"]
-    # go:
-    #     execute: ["go", "run", "HelloWorld.go", "[[tests]]"]
-    # html:
-    #    execute: ["lynx", "--dump", "HelloWorld.html#[[tests]]"]
+	custom:
+		- [python3, a_test.py, $(greet)]
