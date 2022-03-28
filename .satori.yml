@@ -1,11 +1,11 @@
 tests:
-	assertStdoutEqual: Hello World
-	
-	greet:
-		- Hello World
+  assertStdoutEqual: Hello World
 
-	python:
-		- [python3, HelloWorld.py]
+  greet:
+    - Hello World
 
-	custom:
-		- [python3, a_test.py, $(greet)]
+  python:
+    - [python3, HelloWorld.py]
+
+  custom:
+    - [python3, a_test.py, $(greet)]
