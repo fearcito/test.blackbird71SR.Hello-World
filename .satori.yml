@@ -1,8 +1,12 @@
 tests:
   assertStdoutEqual: Hello Earth
+  assertReturnCode: 0
 
   greet:
     - Hello World
+    - mutate: radamsa
+      mutate_qty: 4
+      value: Hello Earth
 
   python:
     - [python3, HelloWorld.py]
