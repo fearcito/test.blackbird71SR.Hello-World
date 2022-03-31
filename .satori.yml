@@ -1,15 +1,12 @@
 tests:
-  assertStdoutEqual: Hello Earth
-  assertReturnCode: 0
-
-  greet:
-    - Hello World
-    - mutate: radamsa
-      mutate_qty: 4
-      value: Hello Earth
-
-  python:
-    - [python3, HelloWorld.py]
-
-  custom:
-    - [python3, a_test.py, $(greet)]
+  assertStdoutEqual: ""
+  host:
+    - www.uflow.biz
+  install:
+    - [apt, update]
+    - [apt, -y, install, testssl.sh]
+    - [echo, testssl -oC output.csv $1, ">", test.sh]
+    - [echo, grep 'LOW|MEDIUM|HIGH|CRITICAL' output.csv, ">>", test.sh]
+    - [chmod, "700", test.sh]
+  execute:
+    - [./test.sh, $(host)]
