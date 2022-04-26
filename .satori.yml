@@ -1,13 +1,9 @@
-install:
-  - [apt-get update]
-  - [apt-get -y install testssl.sh]
-  - [echo "testssl -oC output.csv \$1 > /dev/null" > test.sh]
-  - [echo "grep 'LOW\|MEDIUM\|HIGH\|CRITICAL' output.csv" >> test.sh]
-  - [chmod 700 test.sh]
-
 tests:
-  assertStdoutEqual: ""
-  host:
-    - www.uflow.biz
-  execute:
-    - [./test.sh $(host)]
+  assertStdoutEqual: Hello World
+  input:
+    - Hello World
+    - Hello Earth
+  python:
+    - [python3 HelloWorld.py]
+  custom:
+    - [python3 a_test.py $(input)]
