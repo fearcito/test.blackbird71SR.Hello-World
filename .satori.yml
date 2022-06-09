@@ -1,5 +1,7 @@
 tests:
   assertStdoutEqual: Hello World
+  assertSoftwareExists: True
+
   input:
     - Hello World
     - Hello Earth
@@ -7,3 +9,6 @@ tests:
     - [python3 HelloWorld.py]
   custom:
     - [python3 a_test.py $(input)]
+  error:
+    - [aaaa]
+    - [echo test && aaaa]
