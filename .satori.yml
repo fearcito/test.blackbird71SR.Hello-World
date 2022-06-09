@@ -1,3 +1,9 @@
+install:
+  fail:
+    - [echo This works]
+    - [this-does-not]
+    - [echo This should not even appear]
+
 tests:
   assertStdoutEqual: Hello World
   assertSoftwareExists: True
