@@ -4,8 +4,11 @@ tests:
 
   input:
     - Hello World
-    - Hello Earth
   python:
-    - [python3 HelloWorld.py]
+    - [ python3 HelloWorld.py ]
   custom:
-    - [python3 a_test.py $(input)]
+    - [ python3 a_test.py $(input) ]
+  bash:
+    - [ bash HelloWorld.sh ]
+  perl:
+    - [ perl HelloWorld.pl ]
