@@ -1,6 +1,6 @@
 tests:
   assertStdoutEqual: Hello World
-  assertSoftwareExists: True
+  assertCommandExists: True
 
   input:
     - Hello World
