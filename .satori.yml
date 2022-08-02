@@ -1,9 +1,3 @@
-install:
-  fail:
-    - [echo This works]
-    - [this-does-not]
-    - [echo This should not even appear]
-
 tests:
   assertStdoutEqual: Hello World
   assertSoftwareExists: True
@@ -15,7 +9,3 @@ tests:
     - [python3 HelloWorld.py]
   custom:
     - [python3 a_test.py $(input)]
-  error:
-    - [aaaa]
-    - [echo test && aaaa]
-
