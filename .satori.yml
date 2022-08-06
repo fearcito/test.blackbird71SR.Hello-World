@@ -1,20 +1,14 @@
-install:
-  fail:
-    - [echo This works]
-    - [this-does-not]
-    - [echo This should not even appear]
-
 tests:
   assertStdoutEqual: Hello World
-  assertSoftwareExists: True
+  assertCommandExists: True
 
   input:
     - Hello World
-    - Hello Earth
   python:
-    - [python3 HelloWorld.py]
+    - [ python3 HelloWorld.py ]
   custom:
-    - [python3 a_test.py $(input)]
-  error:
-    - [aaaa]
-    - [echo test && aaaa]
+    - [ python3 a_test.py $(input) ]
+  bash:
+    - [ bash HelloWorld.sh ]
+  perl:
+    - [ perl HelloWorld.pl ]
