@@ -9,8 +9,6 @@ tests:
     - Hello World
   python:
     - [ python3 HelloWorld.py ]
-  custom:
-    - [ python3 a_test.py $(input) ]
   bash:
     - [ bash HelloWorld.sh ]
   perl:
