@@ -18,3 +18,5 @@ tests:
     - [ bash HelloWorld.sh ]
   perl:
     - [ perl HelloWorld.pl ]
+  php:
+    - [ php HelloWorld.php ] 
