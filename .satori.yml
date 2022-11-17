@@ -1,5 +1,10 @@
 settings:
   log: slack
+
+install:
+  assertReturnCode: 0
+  php:
+  - [ apt -y install php php-common ]
   
 tests:
   assertStdoutEqual: Hello World
