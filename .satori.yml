@@ -1,3 +1,6 @@
+settings:
+  log: slack
+  
 tests:
   assertStdoutEqual: Hello World
   assertCommandExists: True
