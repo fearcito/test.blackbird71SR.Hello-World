@@ -7,7 +7,7 @@ settings:
 #  - [ apt -y install php php-common ]
   
 tests:
-  assertStdoutEqual: Hello World
+  assertStdoutContains: Hello World
   assertCommandExists: True
 
   input:
