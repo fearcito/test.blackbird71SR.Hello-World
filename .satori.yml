@@ -1,8 +1,23 @@
+settings:
+  log: slack
+
+install:
+  assertReturnCode: 0
+  php:
+  - [ apt -y install php php-common ]
+  
 tests:
-  assertStdoutEqual: Hello World
+  assertStdoutContains: Hello World
+  assertCommandExists: True
 
   input:
     - Hello World
+  python:
+    - [ python3 HelloWorld.py ]
+  bash:
+    - [ bash HelloWorld.sh ]
+  perl:
+    - [ perl HelloWorld.pl ]
+  php:
+    - [ php HelloWorld.php ] 
 
-  cmd:
-    - [echo $(input)]
