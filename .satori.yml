@@ -9,9 +9,7 @@ install:
 tests:
   assertStdoutContains: Hello World
   assertCommandExists: True
-
-  input:
-    - Hello World
+  
   python:
     - [ python3 HelloWorld.py ]
   bash:
