@@ -1,7 +1,6 @@
 install:
-  assertReturnCode: 0
-  php:
-  - apt -y install php php-common node
+  - apt update
+  - apt install -qy php php-common node
   
 tests:
   assertStdoutContains: Hello World
