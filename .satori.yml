@@ -1,9 +1,5 @@
 settings:
   image: nikolaik/python-nodejs
-
-#install:
-#  - apt update
-#  - apt install -qy php php-common nodejs
   
 tests:
   assertStdoutContains: Hello World
@@ -15,7 +11,5 @@ tests:
     - node HelloWorld.js
   perl:
     - perl HelloWorld.pl
-  php:
-    - php HelloWorld.php 
   python:
     - python3 HelloWorld.py
