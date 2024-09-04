@@ -1,6 +1,9 @@
-install:
-  - apt update
-  - apt install -qy php php-common nodejs
+settings:
+  image:nikolaik/python-nodejs
+
+#install:
+#  - apt update
+#  - apt install -qy php php-common nodejs
   
 tests:
   assertStdoutContains: Hello World
