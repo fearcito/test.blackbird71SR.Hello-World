@@ -7,12 +7,13 @@ tests:
   assertStdoutContains: Hello World
   assertCommandExists: True
   
-  python:
-    - python3 HelloWorld.py
   bash:
     - bash HelloWorld.sh
+  javascript:
+    - node HelloWorld.js
   perl:
     - perl HelloWorld.pl
   php:
     - php HelloWorld.php 
-
+  python:
+    - python3 HelloWorld.py
