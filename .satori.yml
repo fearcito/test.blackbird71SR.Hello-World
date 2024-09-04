@@ -1,21 +1,18 @@
-settings:
-  log: slack
-
 install:
   assertReturnCode: 0
   php:
-  - [ apt -y install php php-common ]
+  - apt -y install php php-common node
   
 tests:
   assertStdoutContains: Hello World
   assertCommandExists: True
   
   python:
-    - [ python3 HelloWorld.py ]
+    - python3 HelloWorld.py
   bash:
-    - [ bash HelloWorld.sh ]
+    - bash HelloWorld.sh
   perl:
-    - [ perl HelloWorld.pl ]
+    - perl HelloWorld.pl
   php:
-    - [ php HelloWorld.php ] 
+    - php HelloWorld.php 
 
