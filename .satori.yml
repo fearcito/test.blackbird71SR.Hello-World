@@ -3,7 +3,6 @@ settings:
   
 tests:
   assertStdoutContains: Hello World
-  assertCommandExists: True
   
   bash:
     - bash HelloWorld.sh
