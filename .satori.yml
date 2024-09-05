@@ -1,4 +1,5 @@
 settings:
+  name: Polyglot Hello World Test
   image: nikolaik/python-nodejs
   
 tests:
