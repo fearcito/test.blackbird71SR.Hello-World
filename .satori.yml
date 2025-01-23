@@ -13,3 +13,6 @@ tests:
     - perl HelloWorld.pl
   python:
     - python3 HelloWorld.py
+
+import:
+  - satori://code/python/bandit.yml
